@@ -20,6 +20,7 @@ RESIN_BOOT_PART = "1"
 RESIN_DEFAULT_ROOT_PART = "2"
 RESIN_ENV_FILE = "resinOS_uEnv.txt"
 RESIN_UBOOT_DEVICES ?= "0 1 2"
+RESIN_KERNEL_IMAGETYPE ?= "${KERNEL_IMAGETYPE}"
 
 do_generate_resin_uboot_configuration () {
     cat > ${S}/include/config_resin.h <<EOF
@@ -29,6 +30,7 @@ do_generate_resin_uboot_configuration () {
 #define RESIN_IMAGE_FLAG_FILE ${RESIN_IMAGE_FLAG_FILE}
 #define RESIN_FLASHER_FLAG_FILE ${RESIN_FLASHER_FLAG_FILE}
 #define RESIN_ENV_FILE ${RESIN_ENV_FILE}
+#define RESIN_KERNEL_IMAGETYPE ${RESIN_KERNEL_IMAGETYPE}
 EOF
 }
 addtask do_generate_resin_uboot_configuration after do_patch before do_configure
