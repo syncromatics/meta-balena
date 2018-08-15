@@ -23,6 +23,7 @@
        "resin_uboot_devices=" __stringify(RESIN_UBOOT_DEVICES) "\0" \
        "resin_boot_part=" __stringify(RESIN_BOOT_PART) "\0" \
        "resin_root_part=" __stringify(RESIN_DEFAULT_ROOT_PART) "\0" \
+       "resin_kernel_imagetype=" __stringify(RESIN_KERNEL_IMAGETYPE) "\0" \
        \
        "resin_find_root_part_uuid=" \
                "part uuid ${resin_dev_type} ${resin_dev_index}:${resin_root_part} resin_root_part_uuid\0" \
@@ -37,6 +38,9 @@
        \
        "resin_flasher_detect=" \
                "fatload ${resin_scan_dev_type} ${resin_scan_dev_index}:${resin_boot_part} ${resin_kernel_load_addr} ${resin_flasher_flag_file};\0" \
+       \
+       "resin_kernel_extdetect=" \
+               "ext4load ${resin_dev_type} ${resin_dev_index}:${resin_root_part} ${resin_kernel_load_addr} /boot/${resin_kernel_imagetype} 100;\0" \
        \
        "resin_image_detect=" \
                "fatload ${resin_scan_dev_type} ${resin_scan_dev_index}:${resin_boot_part} ${resin_kernel_load_addr} ${resin_image_flag_file};\0" \
@@ -79,9 +83,17 @@
                        "run resin_import_env_file;" \
                "fi;\0" \
        \
+       "resin_check_kernel_extroot=" \
+               "if run resin_kernel_extdetect; then " \
+                 "env set resin_kernel_loader ext4load; " \
+               "else; "\
+                 "env delete resin_kernel_loader; " \
+               "fi;\0" \
+       \
        "resin_set_kernel_root=" \
                "run resin_set_dev_index;" \
                "run resin_inject_env_file;" \
+               "run resin_check_kernel_extroot;" \
                "run resin_find_root_part_uuid;" \
                "setenv resin_kernel_root root=PARTUUID=${resin_root_part_uuid}\0"
 
