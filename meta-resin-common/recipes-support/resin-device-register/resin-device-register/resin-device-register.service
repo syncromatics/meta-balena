@@ -2,6 +2,7 @@
 Description=Resin device register
 Requires=resin-boot.service resin-device-uuid.service os-config-devicekey.service
 After=resin-boot.service resin-device-uuid.service os-config-devicekey.service
+Before=os-config.service
 
 [Service]
 Type=oneshot
