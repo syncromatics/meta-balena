@@ -1,6 +1,16 @@
 Change log
 -----------
 
+# v2.14.4
+## (2018-08-23)
+
+* Update NetworkManager to 1.12.2 [Andrei Gherzan]
+* Avoid os-config / resin-device-register service race [Andrei Gherzan]
+* Avoid os-config / uuid service race [Andrei Gherzan]
+* Move the rw copy of config.json out of /tmp for flasher [Andrei Gherzan]
+* Fix dashboard feedback on fast flashing devices [Andrei Gherzan]
+* Update kernel-modules-headers to v0.0.11 [Andrei Gherzan]
+
 # v2.14.3
 ## (2018-08-13)
 
