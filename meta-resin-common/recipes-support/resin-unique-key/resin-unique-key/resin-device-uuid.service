@@ -10,4 +10,4 @@ Environment="HOME=/home/root"
 ExecStart=@BASE_BINDIR@/bash @BINDIR@/resin-unique-key uuid
 
 [Install]
-WantedBy=multi-user.target
+WantedBy=basic.target
