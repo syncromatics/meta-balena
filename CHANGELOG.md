@@ -1,6 +1,11 @@
 Change log
 -----------
 
+# v2.14.2
+## (2018-08-24)
+
+* Fix ucl dependency in upx [Andrei Gherzan]
+
 # v2.14.1
 ## (2018-08-02)
 
