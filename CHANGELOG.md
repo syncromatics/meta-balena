@@ -1,6 +1,17 @@
 Change log
 -----------
 
+# v2.14.4
+## (2018-08-27)
+
+* Move kernel from boot to root partitions [Zubair Lutfullah Kakakhel]
+* Update NetworkManager to 1.12.2 [Andrei Gherzan]
+* Avoid os-config-devicekey / uuid service race [Andrei Gherzan]
+* Move the rw copy of config.json out of /tmp for flasher [Andrei Gherzan]
+* Fix dashboard feedback on fast flashing devices [Andrei Gherzan]
+* Fix ucl dependency in upx [Andrei Gherzan]
+* Update kernel-modules-headers to v0.0.11 [Andrei Gherzan]
+
 # v2.14.3
 ## (2018-08-13)
 
