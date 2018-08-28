@@ -1,6 +1,12 @@
 Change log
 -----------
 
+# v2.16.0
+## (2018-08-28)
+
+* Remove u-boot integration patches from meta-resin [Zubair Lutfullah Kakakhel]
+* Move kernel from boot to root partitions [Zubair Lutfullah Kakakhel]
+
 # v2.15.0
 ## (2018-08-28)
 
