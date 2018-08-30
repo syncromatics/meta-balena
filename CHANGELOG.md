@@ -1,6 +1,11 @@
 Change log
 -----------
 
+# v2.15.0
+## (2018-08-30)
+
+* Enhanced security options for dropbear [Andrei Gherzan]
+
 # v2.14.3
 ## (2018-08-13)
 
