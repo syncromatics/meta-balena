@@ -3,6 +3,7 @@ SRC_URI += " \
     file://dropbear.socket \
     file://ssh.service \
     file://dropbearkey.conf \
+    file://0001-Secure-configuration-options.patch \
     "
 
 # In dropbear versions 2016.73 and 2016.74 the code indentation has been fixed thus making our current patch (use_atomic_key_generation_in_all_cases.patch) not work anymore
