@@ -1,6 +1,13 @@
 Change log
 -----------
 
+# v2.15.0
+## (2018-09-04)
+
+* Enhanced security options for dropbear - morty [Andrei Gherzan]
+* Enhanced security options for dropbear - krogoth [Andrei Gherzan]
+* Enhanced security options for dropbear - sumo [Andrei Gherzan]
+
 # v2.14.3
 ## (2018-08-13)
 
