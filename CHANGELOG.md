@@ -1,6 +1,11 @@
 Change log
 -----------
 
+# v2.18.0
+## (2018-09-04)
+
+* Add support to load kernel from the root partition [Zubair Lutfullah Kakakhel]
+
 # v2.17.0
 ## (2018-09-03)
 
