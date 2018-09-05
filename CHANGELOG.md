@@ -1,6 +1,11 @@
 Change log
 -----------
 
+# v2.17.1
+## (2018-09-05)
+
+* Enable CONFIG_IP_NF_TARGET_LOG as a module [John (Jack) Brown]
+
 # v2.17.0
 ## (2018-09-03)
 
