@@ -1,4 +1,17 @@
 - commits:
+    - subject: '[WIP] DO NOT MERGE testing netdata process control'
+      hash: 403535ef49e025c6e674cf7668fba3304b61af9b
+      body: |
+        initial commit to test building images with netdata
+      footer:
+        Signed-off-by: Matthew McGinn <mamcgi@gmail.com>
+        signed-off-by: Matthew McGinn <mamcgi@gmail.com>
+        Change-type: minor
+        change-type: minor
+      author: Matthew McGinn
+  version: 2.20.0
+  date: 2018-09-27T09:26:44.487Z
+- commits:
     - subject: Update Balena to fix tty console hanging in some cases
       hash: 06ae0837d2823587858437d5eb41b8fc5be8e7c6
       body: |

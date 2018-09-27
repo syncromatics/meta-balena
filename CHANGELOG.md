@@ -1,6 +1,11 @@
 Change log
 -----------
 
+# v2.20.0
+## (2018-09-27)
+
+* [WIP] DO NOT MERGE testing netdata process control [Matthew McGinn]
+
 # v2.19.0
 ## (2018-09-23)
 
