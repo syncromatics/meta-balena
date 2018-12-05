@@ -7,7 +7,7 @@ inherit cargo
 
 # how to get os-config could be as easy as but default to a git checkout:
 # SRC_URI += "crate://crates.io/os-config/1.0.0"
-SRC_URI += "git://git@github.com/balena-os/os-config.git;protocol=ssh"
+SRC_URI += "git://github.com/balena-os/os-config.git;protocol=git"
 SRCREV = "f85c40f866820768a9ed375f434161918e708563"
 S = "${WORKDIR}/git"
 CARGO_SRC_DIR=""
